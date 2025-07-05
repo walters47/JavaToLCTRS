@@ -1,0 +1,9 @@
+(format LCTRS :smtlib 2.6)
+(theory Reals)
+(fun compareDoubles (-> Real Real Real))
+(rule (compareDoubles x y) (x) :guard (> x y))
+(rule (compareDoubles x y) (y) :guard (> y x))
+(rule (compareDoubles x y) (+ y x))
+
+
+

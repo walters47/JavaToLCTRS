@@ -1,0 +1,9 @@
+(format LCTRS :smtlib 2.6)
+(theory Ints)
+(fun areNumbersEqual (-> Int Boolean))
+(rule (areNumbersEqual x) (var) :var ((y Int)))
+(rule (areNumbersEqual x) (== x y))
+
+
+
+

@@ -1,0 +1,9 @@
+(format LCTRS :smtlib 2.6)
+(theory Ints)
+(fun addFive (-> Int Int))
+(fun addFiveIfOverTen (-> Int Int))
+(rule (addFive x) (+ x 5))
+(rule (addFiveIfOverTen x) (addFive x) :guard (> x 10))
+(rule (addFiveIfOverTen x) (x))
+
+
